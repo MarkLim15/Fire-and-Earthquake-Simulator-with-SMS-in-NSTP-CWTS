@@ -1,4 +1,4 @@
-# 🔥 Earthquake and Fire Simulation System
+# Earthquake and Fire Simulation System
 
 A multi-board embedded system that simulates and detects **earthquake** and **fire** events in real time. Built as a capstone thesis project at Rizal Technological University.
 
@@ -6,7 +6,7 @@ The system uses multiple microcontrollers working together to detect sensor even
 
 ---
 
-## 📷 Demo
+## Demo
 
 **Earthquake Simulation**
 >> https://youtu.be/bN8KYFFl7Zw
@@ -15,7 +15,7 @@ The system uses multiple microcontrollers working together to detect sensor even
 >> https://youtu.be/gObH_3M5nrk
 ---
 
-## 🧠 System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────┐
@@ -46,7 +46,7 @@ The system uses multiple microcontrollers working together to detect sensor even
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 arduino-fire-earthquake-alarm/
@@ -65,7 +65,7 @@ arduino-fire-earthquake-alarm/
 
 ---
 
-## 🔧 Hardware Components
+## Hardware Components
 
 | Component | Quantity | Purpose |
 |---|---|---|
@@ -112,7 +112,7 @@ The system operates in 3 modes controlled via the mobile app:
 
 ---
 
-## 📲 SMS Alert Examples
+## SMS Alert Examples
 
 **Fire:**
 ```
@@ -127,7 +127,7 @@ Warning! Intensity 6.42 earthquake has been detected.
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Install Required Libraries
 In Arduino IDE, go to **Sketch → Include Library → Manage Libraries** and install:
@@ -163,14 +163,14 @@ Open `esp32_iot/esp32_iot.ino` and replace the placeholders:
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 **Mark Anthony A. Lim** — Rizal Technological University
 Bachelor of Science in Computer Engineering, 2024
 
 ---
 
-## 📄 License
+## License
 
 This project was developed as an academic thesis. Feel free to use it as a reference for your own embedded systems projects.
 
