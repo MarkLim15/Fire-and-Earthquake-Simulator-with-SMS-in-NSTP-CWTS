@@ -91,9 +91,9 @@ The system operates in 3 modes controlled via the mobile app:
 | Mode | Description |
 
 
- **Home (0)** | Idle — all outputs off 
- **Fire Simulator (1)** | Monitors 5 flame sensors; triggers relays, lights, speaker, and SMS on detection
- **Earthquake Simulator (2)** | Reads accelerometer; maps vibration to Richter scale (3–9); drives motor and sends SMS
+| **Home (0)** | Idle — all outputs off |
+| **Fire Simulator (1)** | Monitors 5 flame sensors; triggers relays, lights, speaker, and SMS on detection|
+| **Earthquake Simulator (2)** | Reads accelerometer; maps vibration to Richter scale (3–9); drives motor and sends SMS|
 
 ### Fire Detection
 - 5 IR flame sensors monitor individual zones (Floors 1–4 and House)
