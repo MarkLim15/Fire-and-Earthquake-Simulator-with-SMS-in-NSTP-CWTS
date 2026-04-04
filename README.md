@@ -19,30 +19,36 @@ https://youtu.be/bN8KYFFl7Zw?si=bD3d5yVtjDiuSPyW
 ## System Architecture
 
 ```
-┌─────────────────────────────────────────┐
-│        Mobile App (Firebase RTDB)       │
-└────────────────┬────────────────────────┘
-                 │ Wi-Fi
-         ┌───────▼────────┐
-         │   ESP32        │◄──── ThingSpeak Dashboard
-         │   (IoT Bridge) │
-         └───────┬────────┘
-                 │ UART Serial
-     ┌───────────▼──────────────────────┐
-     │     Arduino Mega — Main Controller│
-     │     LCD | Relays | Lights | Audio │
-     └──┬──────────────┬────────────────┘
-        │ UART          │ UART
-┌───────▼──────┐  ┌─────▼──────────────────┐
-│ Arduino Uno  │  │ Arduino Mega            │
-│ Fire Sensors │  │ Earthquake Simulator    │
-│ 5x IR Flame  │  │ ADXL335 + DC Motor      │
-└──────────────┘  └─────────────────────────┘
-                         ▲
-                  ┌──────┴──────────────┐
-                  │ ESP8266 NodeMCU      │
-                  │ GSM SMS (SIM900A)    │
-                  └─────────────────────┘
++------------------------------------+
+|     Mobile App (Firebase RTDB)     |
++------------------------------------+
+                  |
+               [Wi-Fi]
+                  |
+          +-------+--------+
+          |   ESP32         |<---- ThingSpeak
+          |   (IoT Bridge)  |
+          +-------+---------+
+                  |
+              [UART Serial]
+                  |
+    +-------------+-----------------+
+    |  Arduino Mega - Main Controller|
+    |  LCD | Relays | Lights | Audio |
+    +---+-------------------+--------+
+        |                   |
+     [UART]              [UART]
+        |                   |
++-------+------+   +--------+---------------+
+| Arduino Uno  |   | Arduino Mega           |
+| Fire Sensors |   | Earthquake Simulator   |
+| 5x IR Flame  |   | ADXL335 + DC Motor     |
++--------------+   +------------------------+
+                            |
+                    +-------+----------+
+                    | ESP8266 NodeMCU  |
+                    | GSM SMS (SIM900A)|
+                    +------------------+
 ```
 
 ### Communication Flow
